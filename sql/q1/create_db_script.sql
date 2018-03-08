@@ -1,0 +1,3 @@
+CREATE DATABASE jeux_video 
+	DEFAULT CHARACTER SET utf8
+  	DEFAULT COLLATE utf8_general_ci;

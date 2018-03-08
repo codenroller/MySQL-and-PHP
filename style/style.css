@@ -1,0 +1,114 @@
+body {
+	font-size: 16px;
+	background-color: #0097a7;
+}
+h1 {
+	color: #009688;
+}
+h2, h3 {
+	color: #607d83;
+} 
+a.brand-logo, a.brand-logo:hover {
+	cursor: default;
+}
+.cont {
+	width: 75%;
+	max-width: 800px;
+	margin: auto;
+}
+.content {	
+	margin: 85px auto 50px auto;
+	background: white;
+	padding: 5%;
+	text-align: justify;
+}
+ol > li {
+	margin-bottom: 20px;
+}
+.highlight { 
+	color: #009688;  
+}
+
+
+/*Materialize*/
+header {
+	background-color: #37474f;
+}
+nav {
+	width: 75%;
+	margin: auto;
+	background-color: inherit;
+	border: none;
+	box-shadow: none;
+}
+nav li {
+	padding: 5px !important;
+}
+nav li>a {
+	text-decoration: underline;
+	width: 110px;
+	text-align: center;
+	padding: 0 !important;
+}
+nav ul#dropdown.dropdown-content {
+	top: 60px !important;
+	width: 120px !important;
+	background-color: #37474f;
+}
+footer {
+	padding-bottom: 20px;
+}
+footer.page-footer {
+	background-color: #37474f; 
+}
+footer img {
+	margin-bottom: -10px;
+}
+footer a {
+	text-decoration: none;
+}
+footer a:visited, foter a:active {
+	text-decoration: none;
+	border: none;
+}
+div.footer-copyright.cont {
+	background-color: inherit;
+	box-shadow: none;
+}
+
+/*Media Queries*/
+@media screen and ( max-width: 992px ){
+	h1 {
+		font-size: 3em;
+	}
+	h2,h3 {
+		font-size: 2em;
+	}
+	nav li {
+		color:  #009688 !important; 
+	}
+	nav li>a {
+		text-align: left;
+	}
+}
+
+@media screen and ( max-width: 600px ){
+	body {
+		font-size: 14px;
+		background-color: #0097a7;
+	}	
+	h1 {
+		font-size: 2.5em;
+	}	
+	nav {
+		width: 90%;
+		margin: auto;
+	}	
+	.cont {
+		width: 90%;
+	}
+	a.brand-logo, a.brand-logo {
+		font-size: 1.5em;
+	}
+}
+

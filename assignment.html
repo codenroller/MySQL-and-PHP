@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using MySQL</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">            
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type = "text/javascript"
+       src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+	
+	<link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+<header class="row">
+	<div class="col s12 m12 l12"> 
+	  <nav>
+        <div class = "nav-wrapper">
+           <a href = "./assignment.html" class = "brand-logo left">MySQL and PHP</a>           
+           <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>           
+           <ul id = "nav-desktop" class = "right hide-on-med-and-down">
+              <li><a href = "./assignment.html">Assignment</a></li>
+              <li><a  href = "#" class = "dropdown-button"  data-activates = "dropdown">Solutions</a>	
+              <ul id = "dropdown" class = "dropdown-content">
+		         <li><a href = "./owners.php">Owners</a></li>
+		         <li><a href = "./consoles.php">Consoles</a></li>
+		      </ul>              
+           </ul>                 
+	      <ul class="side-nav" id="mobile-demo">
+              <li><a href = "./assignment.html">Assignment</a></li>  
+              <li>
+              		Solutions
+              		<ul>
+              			<li><a href = "./owners.php">Owners</a></li>
+              			<li><a href = "./consoles.php">Consoles</a></li> 
+              		</ul>
+              </li>                  
+	      </ul>
+        </div>
+     </nav>
+	</div>
+</header>
+
+<div class="z-depth-2 cont content">
+
+    <h1>Using MySQL and PHP</h1>
+	
+	<p>
+		The goal of the project is to go through MySQL database basics.
+		We will be focusing on tasks and problems that are common in web development.
+		The main focus of the project is on MySQL database. However it is also important 
+		to understand how to combine web technologies to achieve the desired result.
+		So we will go through a couple of examples that use MySQL and PHP together.
+	</p>
+	
+	<h3>Keywords:</h3>
+	<p>
+		MySQL, SQL, PHP, relational database, data integrity, data constraints, 
+		data type, table, query, view, transaction.
+	</p>
+	
+	<h3>Assignment:</h3>
+	<ol>
+		<li>
+			Create a new database named <span class="highlight">jeux-video</span>. 
+			For starters you have a MySQL code that creates the tables in DB. 
+			The initial script is saved in the project root directory as 
+			<span class="highlight">initial_script.sql</span>.
+			Go through the code, apply changes if necessary.
+			Explain the changes you have applied. Execute the final version of your script. 
+			Now nou are good to go! :)
+		</li>
+		
+		<li>
+			Write a query showing all video games in alphabetical order. The query should 
+			return: (a) game id; (b) game name; (c) name of owner; (d) name of console;
+			(e) game price. Save your script as <span class="highlight">qr_video_games.sql</span>. 
+			
+			Create a view based on the written query. Name the view 
+			<span class="highlight">vw_video_games</span> 
+			and save the script as <span class="highlight">vw_video_games.sql</span>.
+		</li>
+		
+		<li>
+			Write a query that displays all the games owned by Patrick. Games should be displayed
+			in alphabetical order. Save the script under the name 
+			<span class="highlight">qr_games_owner_patrick.sql</span>.
+			
+			Write a PHP script displaying a list of video games belonging to each owner. 
+			The owners and the games should be listed in alphabetical order. 
+			Save the script under the name <span class="highlight">owners.php</span>.
+		</li>
+		
+		<li>
+			Write a PHP script displaying a list of video games for each of the consoles.
+			The consoles and the games should be listed in alphabetical order.
+			Save your script under the name <span class="highlight">consoles.php</span>.			
+		</li>
+		
+		<li>
+			Write a query showing only the games starting from 'M'. 
+			The query should return: (a) game id; (b) game name; (c) name of owner; (d) name of console;
+			(e) game price. Name the script <span class="highlight">qr_video_games_m.sql</span>. 
+			To keep things simple you are allowed to use the view 
+			<span class="highlight">vw_video_games</span> that you created in the previous task.			
+		</li>
+		
+		<li>
+			Write a query that displays games with id of a console that is not registered in the 
+			table <span class="highlight">console</span>.
+		</li>	
+	</ol>
+</div>
+
+<footer class = "page-footer">        
+     <div class = "footer-copyright cont">        
+	     &copy; 2018 MySQL and PHP Practice
+	     <a class = "grey-text text-lighten-4 right" target="_blank"
+	     	href = "https://github.com/codenroller/MySQL-and-PHP.git">
+	     		<img id="git" src='images/gitcat.png'></img></a>         
+     </div>         
+</footer>
+
+<div class="scripts">
+       <script src='./js/style.js'></script>
+</div>    
+
+</body>
+</html>
