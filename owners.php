@@ -48,7 +48,7 @@
     
 <!-- begin of summary block --> 
 <?php 
-    include_once '.\db\db.php';
+    include_once './db/db.php';
     
     //function: inserts game owner div block into html
     function game_owner_block ($owner, $num_of_games, $games) {

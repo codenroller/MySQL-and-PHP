@@ -48,7 +48,7 @@
     
 <!-- begin of summary block --> 
 <?php 
-    include_once '.\db\db.php'; 
+    include_once './db/db.php'; 
     
     //function: inserts game console div block into html
     function game_console_block ($console, $num_of_games, $games) {

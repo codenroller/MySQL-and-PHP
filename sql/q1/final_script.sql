@@ -5,8 +5,7 @@
 CREATE TABLE IF NOT EXISTS `console` (
   `id_console` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nom_console` varchar(255) NOT NULL
-) ENGINE=InnoDB;
-
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
 --
 -- Adding unique constraint on console
@@ -49,8 +48,8 @@ CREATE TABLE IF NOT EXISTS `jeux_video` (
   `commentaires` VARCHAR(512),
   `id_proprietaire` SMALLINT UNSIGNED NOT NULL,
   `id_console` TINYINT UNSIGNED NULL,
-  `date_enregistrement` datetime DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB;
+  `date_enregistrement` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
 --
 -- Adding unique constraint on jeux_video
@@ -127,7 +126,7 @@ INSERT INTO `jeux_video`
 CREATE TABLE IF NOT EXISTS `proprietaire` (
   `id_proprietaire` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nom_proprietaire` varchar(255) NOT NULL
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
 
 --

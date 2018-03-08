@@ -7,8 +7,8 @@ function dbconn() {
     $db = ['conn'=>false, 'err'=>false];
     
     try {
-        $db['conn'] = new PDO ('mysql:host=localhost;dbname=jeux_video', 'userName', 'dbPassword');
-        $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $db['conn'] = new PDO ('mysql:host=localhost; dbname=jeux_video', 'userName', 'password');
+        $db['conn']->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch (PDOException $e) {
         $db['err'] = $e;
@@ -18,8 +18,4 @@ function dbconn() {
         return $db;
     }
 }
-
-//$test = dbconn();
-//print var_dump($test);
-//$test = null;
 ?>
